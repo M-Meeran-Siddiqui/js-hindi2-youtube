@@ -29,3 +29,7 @@ console.log(typeof age);
 
 console.log(typeof null);        // object (is the typeof null).
 console.log(typeof undefined);  // iska output undefined he ata hai kyuki  ye khud mein ek type hai.
+
+
+// Two ways to use typeof  first is : (typeof variablename).
+// Second is : (typeof(score)).
