@@ -38,8 +38,8 @@ const anotherId = Symbol ('123')
 
 const bigNumber = 344840840840294823094n;
 
-// console.log(bigNumber);
-// console.log(typeof bigNumber);
+console.log(bigNumber);
+console.log(typeof bigNumber);
 
 const heros = ["shaktiman","naagraj","doga"];    //It is Array
 
@@ -70,6 +70,38 @@ const myFunction = function(){               //here we declare functions and use
 
 
 
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// For Storage :
+// (*) Jitne bhi Primitive datatypes hai unke lie Stack Memory use hoti hai .
+// (*) Jb bhi Stack memory  use hoti hai tb hame hamere variables ke copy milte hai. 
+// (*) Jitne bhi Non-Primitive datatypes hai unke lie Heap Memory use hoti hai.
+// (*) Jb bhi Heap memory use hoti hai tb hame hamere variables ka orginal copy means reference milta hai.
+
+
+
+//See Below Examples-
+   
+// For Stack Memory-
+   let myYoutubename = "Meeran@1234";
+   let newYoutubename = myYoutubename;
+      newYoutubename = "Meeran#3290";
+      console.log(myYoutubename);
+      console.log(newYoutubename);
+
+// For Heap Memory-
+   let user = {
+        email : "meeran@google.com",
+        name  : "Meeran-Siddiqui"
+   }
+
+
+     userTwo = user
+      userTwo.name = "Meeran"
+
+      console.log(userTwo.name);
+      console.log(user.name);
 
 
 
