@@ -27,7 +27,7 @@ console.log(valueInNumber)
 
 // let isLoggedIn = 1;
 //let isLoggedIn = "";
-// let isLoggedIn = "Meeran";
+let isLoggedIn = "Meeran";
 let booleanIsLoggedIn = Boolean(isLoggedIn);
 console.log(booleanIsLoggedIn)
 
@@ -35,3 +35,27 @@ let someNumber = 33
 let stringNumber = String(someNumber);
 console.log(stringNumber);
 console.log(typeof stringNumber)
+
+
+// *********************Operations*********************************
+
+let value = 3
+let negValue = -value;
+console.log(value);
+
+// console.log(2**3)  it simply means 2 ^ 3 = 8;
+
+let str1 = "hello";
+let str2 = " Meeran";
+let str3 = str1 + str2;
+console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+// Note: If String first then all thing behaves like a string and if string last then  first whatever operation present , first it perform then it concatenate with the string. 
+//Remember about postfix and perfix operations.
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
