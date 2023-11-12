@@ -1,0 +1,91 @@
+//How the code execute in Js-
+
+
+//What is  Javascript execution context:
+
+It simply means that   whatever you made a file that file , how the js (executed or run)
+
+>>>>>
+  (Note: )First of all jb bhi hm js ko code dete hai to yaha bnta hai sbse phele Global (execution context). bnta hai jise  refer(भेजना) kr diya jata hai ek variable known as (this) , so ab is this variable ke andar global execution context ko rakh diya jata 
+
+
+  //INTERVIEW QUESTION: 
+
+  (QUESTION : ) Suppose kareye ke apne agar browser pr run kiya hai then Browser ka jo execution context hai wo thoda alag hota hai  , node js environment ka thoda alag hota hai or yahi nahi bun , denode , etc. ka execution context alag alag hota hai . so brower ka execution context thoda sa zada important hota hai  to uske andar this ke value (window object) aate hai  
+
+  //So at the end global execution context to hoga he hoga uske andar value ha ya nahi this ke  wo alag baat hai. 
+
+  Ye pura ek thread ke andar execute hota hai and we know that  js is a single threaded iske andar hr ek chiz process hoti  hai 
+
+  /*What is Execution context and how many are they*/
+  //What is Global execution context and it the first execution context.
+  //Second is Function Execution Context
+  //Eval Execution Context (ye apne ap mein ek property hote hai global object ke)
+
+
+  //Now How the Js code executed->
+(*)Js Run the file into two phases:
+  (1): Memory Creation OR Creation Phase 
+  (2): Execution Phase
+
+
+  //What is the difference b/w memory creation and Execution Phase:
+
+  (Memory Creation Phase):
+    (1) : Memory creation mein only jo hmne variables wagera declare kiya hai unke lie jagha allocate hoti hai. Unko execute nahi kiya jata hai means jo bhi hmne likha hai plus minus and other operation etc.
+  (Execution Phase):
+
+    (1): In Exe. Phase all the operation are executed  . 
+
+
+
+    //How the value put and define  in both of them ->
+
+       //Example:
+
+         let val1 = 10
+         let val2 = 5
+
+         function addNum(num1 , num2){ 
+            let total = num1 + num2
+            return total
+         }
+
+         let result1 = addNum(val1 , val2)
+         let result2 = addNum(10  , 2)
+
+
+
+         //step1: Global Execution or Environment and it allocated inside the this variable.
+         step2 : Memory Creation Phase or Memory Phase 
+                in step2 sare variable ko collect krke unko srif apne pass rakha jata hai .
+
+               like-
+
+               val1 ->undefined
+               val2 ->undefined
+               addnum ->defination
+               result1 ->undefined
+               result2 ->undefined
+
+
+               (so this is known as first cycle) .
+
+
+        step 3 : Execution Phase -
+                
+                like-
+                val1 <- 10
+                val2 <- 5
+                addNum ---> makes its separate executional context in which we have two thing (new variable environment + execution thread)
+
+       //Note:  Jitne number of times hamare function execute hote hai utne number of times hamare box create hote hai jinhe hm bolte hai new executional context. and is  context ke andar variables ka ek alag se enviromment ka pura sandbox banaya jata hai also ek execution thread bhi banaya jata hai jiske help se hamare sake
+       operation execute hona hai. 
+
+       so due to again creation of box so again the step2 and step3 perform means jinte number of times hamare box create hoga utne number of times (step 2 and 3) run karege. and note jinte bhi new executional context hai wo apna kam krne ke baad delete bhi ho jate hai. 
+
+
+                        
+
+
+
