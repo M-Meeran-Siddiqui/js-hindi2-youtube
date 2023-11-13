@@ -22,7 +22,7 @@ const regularUser = {
 
 console.log(regularUser.fullname.userfullname.firstname);  //Remember about optional chaining.
 
-//How we join two array.
+//How we join two object like we do it in the  array.
 const obj1  = {1 : "a" , 2 : "b"}
 const obj2  = {3 : "a" , 4 : "b"}
 const obj4  = {5 : "a" , 6 : "b"}
@@ -86,12 +86,17 @@ const  course ={
        courseInstructor: "hitesh"
 }
 
+
+//For accessing the above object-
+
+//Firstway -
 // course.courseInstructor
 
-//second way or trending way to access the above object- OR we can say to perform destructuring:
+//Second way or trending way to access the above object- OR we can say to perform destructuring:
 
 const {courseInstructor : instructor} = course
-console.log(courseInstructor);
+console.log(courseInstructor);  //gives same output as below
+console.log(instructor);  //gives smae output  as above
 
 
 //Some method and function.  //Below portion is for React : 
@@ -117,7 +122,7 @@ navbar(company = "hitesh")*/
 // }
 
 
-//Sometimes API's are in the format of array
+//Sometimes API's are in the format of (array)
 
 // [
 //      {},

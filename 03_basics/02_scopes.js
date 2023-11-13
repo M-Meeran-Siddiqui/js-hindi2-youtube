@@ -16,18 +16,21 @@ if(true){
 
 // console.log(b);   //  same problem occur here as done with (a) due to let. 
 
-// console.log(c);    // see this is accessible but note is we can't want to do such type of thing so due to this we avoid to  the (var) keyword.
+// console.log(c);    // see this is accessible but note is we can't want to do such type of thing so due to this we avoid to  the (var) keyword. this also done when we simply declare variable without let , const or vars.
 
 // Note : Whatever we declare outside the scope of anyone either it if-else , loop etc. they can be accessible inside the scope or block because they are (global scope) but vice-versa not true (block scope). Or we should want also .
 
 
-// Note : Jb hm console ke andar jake scope check krte hai tb wo baat alag hai . And Jb node ke according scope ko check krte hai tb wo baat alag hai.
+// Note :::::: Jb hm console ke andar jake scope check krte hai tb wo baat alag hai . And Jb node ke according  or through scope ko check krte hai tb wo baat alag hai.
 
 
 
 // ++++++++++++++++++++++++++++++++---Nested-Function and its scope----++++++++++++++++++++
+//<<<<<IN JavaScript also Line by Line execution is performed. so according to this function  works >>>>>>>>
 
 //Note : child function parent  function  ke properties ko access kr skte hai but vice-versa not possible.
+
+// so  phele one call thne one ke  inside -> execute them except two block -> call two() -> enter inside the two execute them ->then go outside 
 function one(){ 
     const username = "Meeran"
     function two(){
@@ -69,3 +72,5 @@ const addTwo = function(num) {
     return num + 2;
 }
 // console.log(addTwo(5));  //suppose if we move it above like see above
+
+
