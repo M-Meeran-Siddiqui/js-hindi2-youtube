@@ -64,10 +64,16 @@ const strCopy = str.split();
 console.log(strCopy);
 
 console.log(str.split('_'))  //know about this more. 
-
+/*
+The split('_') function splits the string at each underscore ('_') and creates an array of substrings. In the resulting array, 
+the elements are separated by commas. So, in the example I provided earlier ("hello_world"), the string is split into two parts: 
+"hello" and "world", and they are represented as elements in an array. The commas in the array indicate the separation between
+these elements.
+*/
 
 //Other Method in strings are - 
-/*The at() method of Array instances takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.*/
+/*The at() method of Array instances takes an integer value and returns the item at that index, allowing for positive and 
+negative integers. Negative integers count back from the last item in the array.*/
 
 
 const array1 = [ 5 , 6 , 7 , 8  , 9 , 10];
@@ -96,7 +102,8 @@ console.log(`Character code ${sentence.charCodeAt(index2)} is equal to ${sentenc
 
 
 
-/*The codePointAt() method of String values returns a non-negative integer that is the Unicode code point value of the character starting at the given index. Note that the index is still based on UTF-16 code units, not Unicode code points.
+/*The codePointAt() method of String values returns a non-negative integer that is the Unicode code point value of the character
+starting at the given index. Note that the index is still based on UTF-16 code units, not Unicode code points.
  */
 
 
