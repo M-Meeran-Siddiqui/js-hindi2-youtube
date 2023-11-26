@@ -24,8 +24,12 @@ console.log(newString);
 
 
 // const anotherString = gameName.slice(0  , 4)
-const anotherString = gameName.slice(-8  ,  4)   //We can use negative value only in the slice method not in others. and it is nothing but  -1 to -4 index from opposite side.
-
+const anotherString = gameName.slice(-8  ,  -4)   //We can use negative value only in the slice method not in others. and it is nothing but  -1 to -4 index from opposite side.
+//See how above work 
+ /*
+    Step-1: count 0 to negative Number according to Number Line .
+    Step-2: After counting it gives result by moving like (--->) and neglect -8 index value and rest of them are printed Like(-7 to -4).
+ */
 
 console.log(anotherString);
 
