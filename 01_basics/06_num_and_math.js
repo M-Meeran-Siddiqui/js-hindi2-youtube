@@ -15,7 +15,7 @@ const balance = new Number(100)
 console.log(balance);
 
 
-console.log(balance.toString().length);//here if you use toString then with the help of this we can use log of method of string . 
+console.log(balance.toString().length);//here if you use toString then with the help of this we can use lot of method of string . 
 
 
 //On E-commerce application in amount section try to use toFixed for precision value. according to you .
@@ -67,6 +67,7 @@ const min = 10
 const max = 20
 
 console.log(Math.random()  * (max - min + 1) + min);
+
 
 
 

@@ -20,10 +20,15 @@ console.log(typeof myDate);
 
 let myCreatedDate = new Date(2023 , 0 , 23)  //Months 0 se start hote hai.
 console.log(myCreatedDate.toDateString());
+
 let myCreatedDate1 = new Date( 2023 , 0 , 23 , 5 , 3);
+console.log(myCreatedDate1.toLocaleString());
 let myCreatedDate2 = new Date("2023-01-14") //and its format is YY/DD/MM and it is not applicable in india.
-let myCreateDate4  = new Date("01-14-2023") //In india MM/DD/YY
-console.log(myCreatedDate.toLocaleString());
+console.log(myCreatedDate2.toLocaleString());
+
+let myCreatedDate4  = new Date("01-14-2023") //In india MM/DD/YY
+console.log(myCreatedDate4.toLocaleString());
+
 
 //learn about just below once.
 let myTimeStamp = Date.now()
@@ -32,9 +37,7 @@ console.log(myCreatedDate.getTime());
 
 
 //conversion in second
-
 console.log(Math.floor(Date.now()/1000));
-
 let newDate = new Date();
 console.log(newDate);
 console.log(newDate.getMonth() + 1);  //IF you want to get month.
@@ -43,8 +46,7 @@ console.log(newDate.getDay());
 
 
 //Most usefull date Method.
-
-newDate.toLocaleDateString('default' , { weekday : "long" , timeZone : ""})
+// newDate.toLocaleDateString('default' , { weekday : "long" , timeZone : ""})
 
 
 

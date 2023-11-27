@@ -24,8 +24,12 @@ console.log(newString);
 
 
 // const anotherString = gameName.slice(0  , 4)
-const anotherString = gameName.slice(-8  ,  4)   //We can use negative value only in the slice method not in others. and it is nothing but  -1 to -4 index from opposite side.
-
+const anotherString = gameName.slice(-8  ,  -4)   //We can use negative value only in the slice method not in others. and it is nothing but  -1 to -4 index from opposite side.
+//See how above work 
+ /*
+    Step-1: count 0 to negative Number according to Number Line .
+    Step-2: After counting it gives result by moving like (--->) and neglect -8 index value and rest of them are printed Like(-7 to -4).
+ */
 
 console.log(anotherString);
 
@@ -60,10 +64,16 @@ const strCopy = str.split();
 console.log(strCopy);
 
 console.log(str.split('_'))  //know about this more. 
-
+/*
+The split('_') function splits the string at each underscore ('_') and creates an array of substrings. In the resulting array, 
+the elements are separated by commas. So, in the example I provided earlier ("hello_world"), the string is split into two parts: 
+"hello" and "world", and they are represented as elements in an array. The commas in the array indicate the separation between
+these elements.
+*/
 
 //Other Method in strings are - 
-/*The at() method of Array instances takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.*/
+/*The at() method of Array instances takes an integer value and returns the item at that index, allowing for positive and 
+negative integers. Negative integers count back from the last item in the array.*/
 
 
 const array1 = [ 5 , 6 , 7 , 8  , 9 , 10];
@@ -92,7 +102,8 @@ console.log(`Character code ${sentence.charCodeAt(index2)} is equal to ${sentenc
 
 
 
-/*The codePointAt() method of String values returns a non-negative integer that is the Unicode code point value of the character starting at the given index. Note that the index is still based on UTF-16 code units, not Unicode code points.
+/*The codePointAt() method of String values returns a non-negative integer that is the Unicode code point value of the character
+starting at the given index. Note that the index is still based on UTF-16 code units, not Unicode code points.
  */
 
 
@@ -298,6 +309,8 @@ console.log(paragraph[paragraph.search(regex3)]);
 
 /* The toWellFormed() method of String values returns a string where all lone surrogates of this string are replaced with the Unicode replacement character U+FFFD.
 */
+
+
 
 
 

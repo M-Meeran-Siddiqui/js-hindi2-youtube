@@ -85,6 +85,8 @@ It simply means that   whatever you made a file that file , how the js (executed
        so due to again creation of box so again the step2 and step3 perform means jinte number of times hamare box create hoga utne number of times (step 2 and 3) run karege. and note jinte bhi new executional context hai wo apna kam krne ke baad delete bhi ho jate hai. 
 
 
+
+
                         
 
 

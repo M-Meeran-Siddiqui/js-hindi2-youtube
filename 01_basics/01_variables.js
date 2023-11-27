@@ -12,3 +12,4 @@ accountCity = "Bengaluru"
 // console.log(accountId);
 
 console.table([accountId , accountEmail , accountPassword , accountCity , accountState]);  //Shortcut for printing at once Or we can say to print data in the tabular form.
+
